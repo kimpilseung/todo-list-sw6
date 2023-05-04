@@ -33,16 +33,21 @@ ul {
     display: block;
 }
 li {
+    position: relative;
     display: flex;
     align-self: center;
     font-size: 15px;
     margin-bottom: 10px;
     border-bottom: 1px solid lightgray;
 }
+label {
+    width: 100%;
+    word-wrap: break-word;
+}
 input[type="checkbox"] {
     cursor: pointer;
     width: 15px;
-    height: 15px;
+    height: 13px;
 }
 #clear {
     display: none;
@@ -55,4 +60,13 @@ input[type="checkbox"] {
     font-size: 12px;
     font-weight: bold;
     text-decoration: none;
+}
+.delete {
+    cursor: pointer;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.2)
 }
